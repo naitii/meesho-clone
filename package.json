@@ -1,0 +1,20 @@
+{
+  "name": "meesho-clone",
+  "version": "1.0.0",
+  "description": "Meesho clone with Meesho Express feature",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "setup": "node setup-env.js",
+    "seed": "cd server && node seedData.js"
+  },
+  "keywords": ["meesho", "ecommerce", "express-delivery"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
