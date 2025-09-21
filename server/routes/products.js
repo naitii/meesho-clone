@@ -28,7 +28,7 @@ router.get('/express', async (req, res) => {
 
     // Format the response to match the frontend requirements
     const expressProducts = expressInventory.map(item => ({
-      id: item._id,
+      id: item.product._id, // Use product ID instead of inventory ID
       name: item.product.name,
       price: item.product.price,
       imageUrl: item.product.imageUrl,

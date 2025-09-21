@@ -491,12 +491,6 @@ async function seedDatabase() {
     await mongoose.connect(config.MONGODB_URI);
     console.log('Connected to MongoDB');
 
-    // Clear existing data
-    await Seller.deleteMany({});
-    await Product.deleteMany({});
-    await Inventory.deleteMany({});
-    console.log('Cleared existing data');
-
     // Insert sellers
     const sellers = await Seller.insertMany(sampleSellers);
     console.log('Inserted sellers');

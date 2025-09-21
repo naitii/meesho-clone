@@ -80,7 +80,7 @@ const Header = ({ onSearch, onCategoryFilter, selectedCategory, cartItemCount, o
       </div>
 
       {/* Secondary Navigation */}
-      <div className="bg-meesho-pink-light">
+      <div className="bg-meesho-pink">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex space-x-8 py-3">
             <button 
@@ -183,39 +183,49 @@ const Header = ({ onSearch, onCategoryFilter, selectedCategory, cartItemCount, o
 // Express Product Card Component
 const ExpressProductCard = ({ product, onSellerClick }) => {
   return (
-    <div className="bg-white border border-gray-200 rounded-sm overflow-hidden hover:shadow-md transition-shadow duration-200">
-      <div className="aspect-square relative">
-        <img
-          src={product.imageUrl}
-          alt={product.name}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute top-2 left-2">
-          <span className="bg-meesho-pink text-white text-xs px-2 py-1 rounded-sm font-medium">
-            ⚡ {product.deliveryTime}
-          </span>
-        </div>
-      </div>
-      <div className="p-3">
-        <h3 className="font-medium text-gray-900 text-sm mb-2 line-clamp-2 leading-tight" style={{fontSize: '13px'}}>
-          {product.name}
-        </h3>
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-lg font-bold text-meesho-pink" style={{fontSize: '16px'}}>₹{product.price}</span>
-          <div className="flex items-center text-xs text-gray-500">
-            <span className="text-yellow-400">★</span>
-            <span className="ml-1">4.2</span>
+    <Link to={`/product/${product.id}`} className="block">
+      <div className="bg-white border border-gray-200 rounded-sm overflow-hidden hover:shadow-md transition-shadow duration-200">
+        <div className="aspect-square relative">
+          <img
+            src={product.imageUrl}
+            alt={product.name}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute top-2 left-2">
+            <span className="bg-meesho-pink text-white text-xs px-2 py-1 rounded-sm font-medium">
+              ⚡ {product.deliveryTime}
+            </span>
           </div>
         </div>
-        <button
-          onClick={() => onSellerClick(product.sellerId, product.seller)}
-          className="text-xs text-gray-500 hover:text-meesho-pink cursor-pointer w-full text-left"
-          style={{fontSize: '11px'}}
-        >
-          Sold by: {product.seller}
-        </button>
+        <div className="p-3">
+          <h3
+            className="font-medium text-gray-900 text-sm mb-2 line-clamp-2 leading-tight"
+            style={{ fontSize: "13px" }}
+          >
+            {product.name}
+          </h3>
+          <div className="flex items-center justify-between mb-2">
+            <span
+              className="text-lg font-bold text-meesho-pink"
+              style={{ fontSize: "16px" }}
+            >
+              ₹{product.price}
+            </span>
+            <div className="flex items-center text-xs text-gray-500">
+              <span className="text-yellow-400">★</span>
+              <span className="ml-1">4.2</span>
+            </div>
+          </div>
+          <button
+            onClick={() => onSellerClick(product.sellerId, product.seller)}
+            className="text-xs text-gray-500 hover:text-meesho-pink cursor-pointer w-full text-left"
+            style={{ fontSize: "11px" }}
+          >
+            Sold by: {product.seller}
+          </button>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -1179,7 +1189,7 @@ const ProductDetail = ({ onAddToCart }) => {
                   </svg>
                   <span className="text-green-800 font-medium">Free Delivery</span>
                 </div>
-                <p className="text-green-700 text-sm mt-1">Delivery in 3-5 business days</p>
+                <p className="text-green-700 text-sm mt-1">Delivery in 30-50 minutes⚡</p>
               </div>
 
               {/* Quantity Selector */}
