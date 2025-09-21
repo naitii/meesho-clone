@@ -123,6 +123,309 @@ const sampleSellers = [
 ];
 
 const sampleProducts = [
+  // Women Ethnic
+  {
+    name: "Women's Pink Georgette Saree",
+    description: "Elegant pink georgette saree for special occasions",
+    price: 849,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/E4007C?text=Saree",
+    category: "Women Ethnic"
+  },
+  {
+    name: "Women's Cotton Kurti",
+    description: "Comfortable cotton kurti for daily wear",
+    price: 599,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FF69B4?text=Kurti",
+    category: "Women Ethnic"
+  },
+  {
+    name: "Designer Lehenga Set",
+    description: "Beautiful lehenga choli set for festivals",
+    price: 2499,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/E4007C?text=Lehenga",
+    category: "Women Ethnic"
+  },
+  {
+    name: "Silk Dupatta",
+    description: "Elegant silk dupatta with intricate work",
+    price: 399,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FFD700?text=Dupatta",
+    category: "Women Ethnic"
+  },
+  {
+    name: "Anarkali Suit",
+    description: "Stylish anarkali suit for special occasions",
+    price: 1299,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FF69B4?text=Anarkali",
+    category: "Women Ethnic"
+  },
+
+  // Women Western
+  {
+    name: "Women's Jeans",
+    description: "Classic blue denim jeans for casual wear",
+    price: 899,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/4169E1?text=Jeans",
+    category: "Women Western"
+  },
+  {
+    name: "Women's T-Shirt",
+    description: "Comfortable cotton t-shirt in various colors",
+    price: 299,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FF6347?text=T-Shirt",
+    category: "Women Western"
+  },
+  {
+    name: "Women's Summer Dress",
+    description: "Light and breezy summer dress",
+    price: 699,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FFB6C1?text=Dress",
+    category: "Women Western"
+  },
+  {
+    name: "Women's Blouse",
+    description: "Stylish blouse for office and casual wear",
+    price: 499,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/87CEEB?text=Blouse",
+    category: "Women Western"
+  },
+  {
+    name: "Women's Crop Top",
+    description: "Trendy crop top for casual outings",
+    price: 399,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FF69B4?text=Crop+Top",
+    category: "Women Western"
+  },
+
+  // Men
+  {
+    name: "Men's Cotton Check Shirt",
+    description: "Comfortable cotton shirt with check pattern",
+    price: 499,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Shirt",
+    category: "Men"
+  },
+  {
+    name: "Men's Formal Trousers",
+    description: "Professional formal trousers for office wear",
+    price: 799,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/2F4F4F?text=Trousers",
+    category: "Men"
+  },
+  {
+    name: "Men's Polo T-Shirt",
+    description: "Classic polo t-shirt in various colors",
+    price: 399,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FF6347?text=Polo",
+    category: "Men"
+  },
+  {
+    name: "Men's Sports Shoes",
+    description: "Comfortable sports shoes for running and gym",
+    price: 1199,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Sports+Shoes",
+    category: "Men"
+  },
+  {
+    name: "Men's Casual Shirt",
+    description: "Relaxed fit casual shirt for everyday wear",
+    price: 599,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/4169E1?text=Casual+Shirt",
+    category: "Men"
+  },
+
+  // Kids
+  {
+    name: "Kids T-Shirt Set",
+    description: "Pack of 3 colorful t-shirts for kids",
+    price: 299,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FF69B4?text=Kids+T-Shirt",
+    category: "Kids"
+  },
+  {
+    name: "Kids School Uniform",
+    description: "Complete school uniform set for kids",
+    price: 799,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/4169E1?text=Uniform",
+    category: "Kids"
+  },
+  {
+    name: "Kids Denim Jeans",
+    description: "Durable denim jeans for active kids",
+    price: 499,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Kids+Jeans",
+    category: "Kids"
+  },
+  {
+    name: "Kids Party Dress",
+    description: "Beautiful party dress for special occasions",
+    price: 599,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FFB6C1?text=Party+Dress",
+    category: "Kids"
+  },
+  {
+    name: "Kids Winter Jacket",
+    description: "Warm winter jacket for cold weather",
+    price: 899,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Winter+Jacket",
+    category: "Kids"
+  },
+
+  // Home & Kitchen
+  {
+    name: "Designer Wall Clock",
+    description: "Modern wall clock for home decoration",
+    price: 799,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Clock",
+    category: "Home & Kitchen"
+  },
+  {
+    name: "LED Bulb 9W",
+    description: "Energy efficient LED bulb with warm white light",
+    price: 99,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FFFF00?text=LED+Bulb",
+    category: "Home & Kitchen"
+  },
+  {
+    name: "Cotton Bed Sheet Set",
+    description: "Soft cotton bed sheet set for single bed",
+    price: 599,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/87CEEB?text=Bed+Sheet",
+    category: "Home & Kitchen"
+  },
+  {
+    name: "Kitchen Knife Set",
+    description: "Professional stainless steel knife set",
+    price: 899,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/C0C0C0?text=Knife+Set",
+    category: "Home & Kitchen"
+  },
+  {
+    name: "Plant Pot Set",
+    description: "Ceramic plant pots for indoor gardening",
+    price: 399,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/8FBC8F?text=Plant+Pot",
+    category: "Home & Kitchen"
+  },
+  {
+    name: "Bath Towel Set",
+    description: "Soft and absorbent bath towel set",
+    price: 499,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/87CEEB?text=Towel",
+    category: "Home & Kitchen"
+  },
+
+  // Beauty & Health
+  {
+    name: "Face Wash - Oily Skin",
+    description: "Gentle face wash for oily and combination skin",
+    price: 199,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FFB6C1?text=Face+Wash",
+    category: "Beauty & Health"
+  },
+  {
+    name: "Moisturizing Cream",
+    description: "24-hour moisturizing cream for all skin types",
+    price: 299,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FFB6C1?text=Moisturizer",
+    category: "Beauty & Health"
+  },
+  {
+    name: "Lip Balm Set",
+    description: "Set of 3 flavored lip balms",
+    price: 149,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FF69B4?text=Lip+Balm",
+    category: "Beauty & Health"
+  },
+  {
+    name: "Hair Oil - Coconut",
+    description: "Pure coconut hair oil for healthy hair",
+    price: 89,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Hair+Oil",
+    category: "Beauty & Health"
+  },
+  {
+    name: "Shampoo - Anti Dandruff",
+    description: "Anti-dandruff shampoo for healthy scalp",
+    price: 179,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/87CEEB?text=Shampoo",
+    category: "Beauty & Health"
+  },
+
+  // Jewellery & Accessories
+  {
+    name: "Gold Plated Earrings",
+    description: "Elegant gold plated earrings for special occasions",
+    price: 599,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FFD700?text=Earrings",
+    category: "Jewellery & Accessories"
+  },
+  {
+    name: "Silver Chain Necklace",
+    description: "Beautiful silver chain necklace",
+    price: 799,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/C0C0C0?text=Necklace",
+    category: "Jewellery & Accessories"
+  },
+  {
+    name: "Designer Handbag",
+    description: "Stylish handbag perfect for office and parties",
+    price: 1299,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Handbag",
+    category: "Jewellery & Accessories"
+  },
+  {
+    name: "Leather Wallet",
+    description: "Genuine leather wallet with multiple compartments",
+    price: 399,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Wallet",
+    category: "Jewellery & Accessories"
+  },
+  {
+    name: "Silk Scarf",
+    description: "Luxurious silk scarf with beautiful patterns",
+    price: 399,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/FFD700?text=Scarf",
+    category: "Jewellery & Accessories"
+  },
+
+  // Bags & Footwear
+  {
+    name: "Women's Sandals",
+    description: "Comfortable leather sandals for summer",
+    price: 699,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Sandals",
+    category: "Bags & Footwear"
+  },
+  {
+    name: "Men's Leather Belt",
+    description: "Genuine leather belt with classic buckle",
+    price: 299,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Belt",
+    category: "Bags & Footwear"
+  },
+  {
+    name: "Kids School Bag",
+    description: "Colorful school bag with multiple compartments",
+    price: 399,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/32CD32?text=School+Bag",
+    category: "Bags & Footwear"
+  },
+  {
+    name: "Women's Heels",
+    description: "Elegant high heels for formal occasions",
+    price: 899,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Heels",
+    category: "Bags & Footwear"
+  },
+  {
+    name: "Men's Formal Shoes",
+    description: "Professional formal shoes for office wear",
+    price: 1299,
+    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Formal+Shoes",
+    category: "Bags & Footwear"
+  },
+
   // Electronics
   {
     name: "boAt Airdopes 131 Pro",
@@ -179,249 +482,6 @@ const sampleProducts = [
     price: 399,
     imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Mouse",
     category: "Electronics"
-  },
-
-  // Fashion - Women
-  {
-    name: "Women's Pink Georgette Saree",
-    description: "Elegant pink georgette saree for special occasions",
-    price: 849,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/E4007C?text=Saree",
-    category: "Fashion"
-  },
-  {
-    name: "Women's Cotton Kurti",
-    description: "Comfortable cotton kurti for daily wear",
-    price: 599,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FF69B4?text=Kurti",
-    category: "Fashion"
-  },
-  {
-    name: "Designer Handbag",
-    description: "Stylish handbag perfect for office and parties",
-    price: 1299,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Handbag",
-    category: "Fashion"
-  },
-  {
-    name: "Women's Jeans",
-    description: "Classic blue denim jeans for casual wear",
-    price: 899,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/4169E1?text=Jeans",
-    category: "Fashion"
-  },
-  {
-    name: "Silk Scarf",
-    description: "Luxurious silk scarf with beautiful patterns",
-    price: 399,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FFD700?text=Scarf",
-    category: "Fashion"
-  },
-  {
-    name: "Women's Sandals",
-    description: "Comfortable leather sandals for summer",
-    price: 699,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Sandals",
-    category: "Fashion"
-  },
-
-  // Fashion - Men
-  {
-    name: "Men's Cotton Check Shirt",
-    description: "Comfortable cotton shirt with check pattern",
-    price: 499,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Shirt",
-    category: "Fashion"
-  },
-  {
-    name: "Men's Formal Trousers",
-    description: "Professional formal trousers for office wear",
-    price: 799,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/2F4F4F?text=Trousers",
-    category: "Fashion"
-  },
-  {
-    name: "Men's Leather Belt",
-    description: "Genuine leather belt with classic buckle",
-    price: 299,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Belt",
-    category: "Fashion"
-  },
-  {
-    name: "Men's Sports Shoes",
-    description: "Comfortable sports shoes for running and gym",
-    price: 1199,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Sports+Shoes",
-    category: "Fashion"
-  },
-  {
-    name: "Men's Polo T-Shirt",
-    description: "Classic polo t-shirt in various colors",
-    price: 399,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FF6347?text=Polo",
-    category: "Fashion"
-  },
-
-  // Grocery
-  {
-    name: "Amul Gold Milk - 1L",
-    description: "Fresh whole milk 1 liter pack",
-    price: 68,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Milk",
-    category: "Grocery"
-  },
-  {
-    name: "Dairy Milk Silk Oreo",
-    description: "Delicious chocolate bar with oreo pieces",
-    price: 140,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Chocolate",
-    category: "Grocery"
-  },
-  {
-    name: "Basmati Rice 1kg",
-    description: "Premium basmati rice for daily cooking",
-    price: 89,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FFF8DC?text=Rice",
-    category: "Grocery"
-  },
-  {
-    name: "Olive Oil 500ml",
-    description: "Extra virgin olive oil for healthy cooking",
-    price: 299,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/808000?text=Olive+Oil",
-    category: "Grocery"
-  },
-  {
-    name: "Fresh Bananas 1kg",
-    description: "Fresh yellow bananas rich in potassium",
-    price: 45,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FFFF00?text=Bananas",
-    category: "Grocery"
-  },
-  {
-    name: "Bread Loaf",
-    description: "Fresh whole wheat bread loaf",
-    price: 35,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/F5DEB3?text=Bread",
-    category: "Grocery"
-  },
-  {
-    name: "Eggs - 12 pieces",
-    description: "Fresh farm eggs, 12 pieces pack",
-    price: 60,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FFF8DC?text=Eggs",
-    category: "Grocery"
-  },
-  {
-    name: "Maggi Noodles 2-Minute",
-    description: "Instant noodles ready in 2 minutes",
-    price: 12,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FFA500?text=Maggi",
-    category: "Grocery"
-  },
-
-  // Home & Living
-  {
-    name: "Designer Wall Clock",
-    description: "Modern wall clock for home decoration",
-    price: 799,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/000?text=Clock",
-    category: "Home"
-  },
-  {
-    name: "LED Bulb 9W",
-    description: "Energy efficient LED bulb with warm white light",
-    price: 99,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FFFF00?text=LED+Bulb",
-    category: "Home"
-  },
-  {
-    name: "Cotton Bed Sheet Set",
-    description: "Soft cotton bed sheet set for single bed",
-    price: 599,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/87CEEB?text=Bed+Sheet",
-    category: "Home"
-  },
-  {
-    name: "Kitchen Knife Set",
-    description: "Professional stainless steel knife set",
-    price: 899,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/C0C0C0?text=Knife+Set",
-    category: "Home"
-  },
-  {
-    name: "Plant Pot Set",
-    description: "Ceramic plant pots for indoor gardening",
-    price: 399,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/8FBC8F?text=Plant+Pot",
-    category: "Home"
-  },
-  {
-    name: "Bath Towel Set",
-    description: "Soft and absorbent bath towel set",
-    price: 499,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/87CEEB?text=Towel",
-    category: "Home"
-  },
-
-  // Beauty & Health
-  {
-    name: "Face Wash - Oily Skin",
-    description: "Gentle face wash for oily and combination skin",
-    price: 199,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FFB6C1?text=Face+Wash",
-    category: "Beauty"
-  },
-  {
-    name: "Moisturizing Cream",
-    description: "24-hour moisturizing cream for all skin types",
-    price: 299,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FFB6C1?text=Moisturizer",
-    category: "Beauty"
-  },
-  {
-    name: "Lip Balm Set",
-    description: "Set of 3 flavored lip balms",
-    price: 149,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FF69B4?text=Lip+Balm",
-    category: "Beauty"
-  },
-  {
-    name: "Hair Oil - Coconut",
-    description: "Pure coconut hair oil for healthy hair",
-    price: 89,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/8B4513?text=Hair+Oil",
-    category: "Beauty"
-  },
-  {
-    name: "Shampoo - Anti Dandruff",
-    description: "Anti-dandruff shampoo for healthy scalp",
-    price: 179,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/87CEEB?text=Shampoo",
-    category: "Beauty"
-  },
-
-  // Kids
-  {
-    name: "Kids T-Shirt Set",
-    description: "Pack of 3 colorful t-shirts for kids",
-    price: 299,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FF69B4?text=Kids+T-Shirt",
-    category: "Kids"
-  },
-  {
-    name: "Educational Toy Set",
-    description: "Learning toys for kids aged 3-6 years",
-    price: 599,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/FFD700?text=Kids+Toy",
-    category: "Kids"
-  },
-  {
-    name: "Kids School Bag",
-    description: "Colorful school bag with multiple compartments",
-    price: 399,
-    imageUrl: "https://placehold.co/400x400/f8f8f8/32CD32?text=School+Bag",
-    category: "Kids"
   }
 ];
 
@@ -449,87 +509,87 @@ async function seedDatabase() {
     const inventoryItems = [
       // Roorkee Express Products
       {
-        product: products[0]._id, // boAt Airdopes
-        seller: sellers[0]._id, // Vijay Electronics
-        quantity: 15,
-        isExpress: true,
-        deliveryTime_mins: 45
-      },
-      {
-        product: products[8]._id, // Saree
+        product: products[0]._id, // Women's Pink Georgette Saree
         seller: sellers[1]._id, // Roopali Sarees
         quantity: 8,
         isExpress: true,
         deliveryTime_mins: 60
       },
       {
-        product: products[15]._id, // Milk
-        seller: sellers[2]._id, // Ankit General Store
-        quantity: 25,
-        isExpress: true,
-        deliveryTime_mins: 25
-      },
-      {
-        product: products[1]._id, // Charger
-        seller: sellers[0]._id, // Vijay Electronics
-        quantity: 12,
-        isExpress: true,
-        deliveryTime_mins: 30
-      },
-      {
-        product: products[2]._id, // Memory Card
-        seller: sellers[0]._id, // Vijay Electronics
-        quantity: 20,
-        isExpress: true,
-        deliveryTime_mins: 40
-      },
-      {
-        product: products[16]._id, // Chocolate
-        seller: sellers[2]._id, // Ankit General Store
-        quantity: 50,
-        isExpress: true,
-        deliveryTime_mins: 20
-      },
-
-      // Delhi Express Products
-      {
-        product: products[3]._id, // Samsung Galaxy Buds
-        seller: sellers[3]._id, // Delhi Tech Hub
-        quantity: 18,
-        isExpress: true,
-        deliveryTime_mins: 35
-      },
-      {
-        product: products[9]._id, // Women's Kurti
-        seller: sellers[4]._id, // Fashion Forward
+        product: products[1]._id, // Women's Cotton Kurti
+        seller: sellers[1]._id, // Roopali Sarees
         quantity: 12,
         isExpress: true,
         deliveryTime_mins: 50
       },
       {
-        product: products[17]._id, // Basmati Rice
-        seller: sellers[5]._id, // Quick Mart Delhi
-        quantity: 30,
+        product: products[20]._id, // Men's Cotton Check Shirt
+        seller: sellers[0]._id, // Vijay Electronics
+        quantity: 15,
+        isExpress: true,
+        deliveryTime_mins: 45
+      },
+      {
+        product: products[25]._id, // Kids T-Shirt Set
+        seller: sellers[2]._id, // Ankit General Store
+        quantity: 20,
         isExpress: true,
         deliveryTime_mins: 30
       },
       {
-        product: products[4]._id, // iPhone Cable
-        seller: sellers[3]._id, // Delhi Tech Hub
+        product: products[30]._id, // Designer Wall Clock
+        seller: sellers[2]._id, // Ankit General Store
+        quantity: 10,
+        isExpress: true,
+        deliveryTime_mins: 40
+      },
+      {
+        product: products[35]._id, // Face Wash
+        seller: sellers[2]._id, // Ankit General Store
         quantity: 25,
         isExpress: true,
         deliveryTime_mins: 25
       },
+
+      // Delhi Express Products
       {
-        product: products[10]._id, // Handbag
+        product: products[40]._id, // Gold Plated Earrings
         seller: sellers[4]._id, // Fashion Forward
         quantity: 8,
         isExpress: true,
         deliveryTime_mins: 45
       },
       {
-        product: products[18]._id, // Olive Oil
-        seller: sellers[5]._id, // Quick Mart Delhi
+        product: products[36]._id, // Women's Sandals
+        seller: sellers[4]._id, // Fashion Forward
+        quantity: 12,
+        isExpress: true,
+        deliveryTime_mins: 50
+      },
+      {
+        product: products[41]._id, // boAt Airdopes
+        seller: sellers[3]._id, // Delhi Tech Hub
+        quantity: 18,
+        isExpress: true,
+        deliveryTime_mins: 35
+      },
+      {
+        product: products[42]._id, // USB-C Fast Charger
+        seller: sellers[3]._id, // Delhi Tech Hub
+        quantity: 25,
+        isExpress: true,
+        deliveryTime_mins: 25
+      },
+      {
+        product: products[2]._id, // Designer Lehenga Set
+        seller: sellers[4]._id, // Fashion Forward
+        quantity: 6,
+        isExpress: true,
+        deliveryTime_mins: 60
+      },
+      {
+        product: products[9]._id, // Women's Summer Dress
+        seller: sellers[4]._id, // Fashion Forward
         quantity: 15,
         isExpress: true,
         deliveryTime_mins: 40
@@ -537,136 +597,136 @@ async function seedDatabase() {
 
       // Mumbai Express Products
       {
-        product: products[5]._id, // Bluetooth Speaker
+        product: products[43]._id, // SanDisk Memory Card
         seller: sellers[6]._id, // Mumbai Electronics
-        quantity: 10,
+        quantity: 20,
         isExpress: true,
         deliveryTime_mins: 40
       },
       {
-        product: products[11]._id, // Women's Jeans
+        product: products[8]._id, // Women's Jeans
         seller: sellers[7]._id, // Style Studio Mumbai
         quantity: 15,
         isExpress: true,
         deliveryTime_mins: 55
       },
       {
-        product: products[19]._id, // Fresh Bananas
+        product: products[28]._id, // Kids Winter Jacket
         seller: sellers[8]._id, // Mumbai Grocery Plus
-        quantity: 40,
-        isExpress: true,
-        deliveryTime_mins: 20
-      },
-      {
-        product: products[6]._id, // Power Bank
-        seller: sellers[6]._id, // Mumbai Electronics
-        quantity: 20,
-        isExpress: true,
-        deliveryTime_mins: 35
-      },
-      {
-        product: products[12]._id, // Silk Scarf
-        seller: sellers[7]._id, // Style Studio Mumbai
         quantity: 12,
         isExpress: true,
         deliveryTime_mins: 45
       },
       {
-        product: products[20]._id, // Bread Loaf
-        seller: sellers[8]._id, // Mumbai Grocery Plus
-        quantity: 35,
+        product: products[44]._id, // Samsung Galaxy Buds
+        seller: sellers[6]._id, // Mumbai Electronics
+        quantity: 16,
         isExpress: true,
-        deliveryTime_mins: 15
+        deliveryTime_mins: 35
+      },
+      {
+        product: products[13]._id, // Women's Crop Top
+        seller: sellers[7]._id, // Style Studio Mumbai
+        quantity: 18,
+        isExpress: true,
+        deliveryTime_mins: 30
+      },
+      {
+        product: products[33]._id, // Bath Towel Set
+        seller: sellers[8]._id, // Mumbai Grocery Plus
+        quantity: 22,
+        isExpress: true,
+        deliveryTime_mins: 25
       },
 
       // Bangalore Express Products
       {
-        product: products[7]._id, // Wireless Mouse
+        product: products[48]._id, // Wireless Mouse
         seller: sellers[9]._id, // Tech City Electronics
         quantity: 22,
         isExpress: true,
         deliveryTime_mins: 30
       },
       {
-        product: products[13]._id, // Men's Formal Trousers
+        product: products[21]._id, // Men's Formal Trousers
         seller: sellers[10]._id, // Bangalore Fashion
         quantity: 18,
         isExpress: true,
         deliveryTime_mins: 50
       },
       {
-        product: products[21]._id, // Eggs
+        product: products[26]._id, // Kids School Uniform
         seller: sellers[11]._id, // Quick Store Bangalore
-        quantity: 50,
+        quantity: 25,
         isExpress: true,
-        deliveryTime_mins: 25
+        deliveryTime_mins: 40
       },
       {
-        product: products[0]._id, // boAt Airdopes (also in Bangalore)
+        product: products[41]._id, // boAt Airdopes (also in Bangalore)
         seller: sellers[9]._id, // Tech City Electronics
         quantity: 12,
         isExpress: true,
         deliveryTime_mins: 40
       },
       {
-        product: products[14]._id, // Women's Sandals
+        product: products[36]._id, // Women's Sandals
         seller: sellers[10]._id, // Bangalore Fashion
         quantity: 10,
         isExpress: true,
         deliveryTime_mins: 45
       },
       {
-        product: products[22]._id, // Maggi Noodles
+        product: products[32]._id, // Plant Pot Set
         seller: sellers[11]._id, // Quick Store Bangalore
-        quantity: 100,
+        quantity: 15,
         isExpress: true,
-        deliveryTime_mins: 15
+        deliveryTime_mins: 35
       },
 
       // Chennai Express Products
       {
-        product: products[0]._id, // boAt Airdopes
+        product: products[41]._id, // boAt Airdopes
         seller: sellers[12]._id, // Chennai Electronics Hub
         quantity: 14,
         isExpress: true,
         deliveryTime_mins: 35
       },
       {
-        product: products[9]._id, // Women's Kurti
+        product: products[1]._id, // Women's Cotton Kurti
         seller: sellers[13]._id, // Chennai Fashion Store
         quantity: 10,
         isExpress: true,
         deliveryTime_mins: 45
       },
       {
-        product: products[15]._id, // Milk
+        product: products[24]._id, // Kids Party Dress
         seller: sellers[14]._id, // Chennai Quick Mart
-        quantity: 20,
+        quantity: 8,
         isExpress: true,
-        deliveryTime_mins: 30
+        deliveryTime_mins: 50
       },
 
       // Pune Express Products
       {
-        product: products[3]._id, // Samsung Galaxy Buds
+        product: products[44]._id, // Samsung Galaxy Buds
         seller: sellers[15]._id, // Pune Tech Store
         quantity: 16,
         isExpress: true,
         deliveryTime_mins: 40
       },
       {
-        product: products[11]._id, // Women's Jeans
+        product: products[8]._id, // Women's Jeans
         seller: sellers[16]._id, // Pune Fashion Hub
         quantity: 12,
         isExpress: true,
         deliveryTime_mins: 50
       },
       {
-        product: products[17]._id, // Basmati Rice
+        product: products[31]._id, // LED Bulb
         seller: sellers[17]._id, // Pune Grocery Plus
-        quantity: 25,
+        quantity: 30,
         isExpress: true,
-        deliveryTime_mins: 35
+        deliveryTime_mins: 25
       }
     ];
 

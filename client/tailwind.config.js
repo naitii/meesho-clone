@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'meesho-pink': '#E4007C',
+        'meesho-pink': '#9F2089',
+        'meesho-pink-light': '#E4007C',
         'meesho-dark': '#1A1A1A',
         'meesho-gray': '#F8F8F8',
         'meesho-light-gray': '#F5F5F5',
