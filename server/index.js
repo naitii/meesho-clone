@@ -17,9 +17,9 @@ const corsOptions = {
     if (!origin) return callback(null, true);
     
     const allowedOrigins = [
-      'http://localhost:3000',
-      'https://meesho-clone-client.onrender.com', // Update this with your actual client URL
-      process.env.CORS_ORIGIN
+      "http://localhost:3000",
+      "https://meesho-clone-liwx.vercel.app/", // Update this with your actual client URL
+      process.env.CORS_ORIGIN,
     ].filter(Boolean);
     
     if (allowedOrigins.includes(origin)) {
