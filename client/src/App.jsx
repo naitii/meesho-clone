@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useParams } from 'react-router-dom';
 import axios from 'axios';
+import API_BASE_URL from './config';
 import { IoCartOutline } from "react-icons/io5";
 
 // Header Component
@@ -226,37 +227,36 @@ const StandardProductCard = ({ product, onAddToCart }) => {
   return (
     <div className="bg-white border border-gray-200 rounded-sm overflow-hidden hover:shadow-md transition-shadow duration-200">
       <Link to={`/product/${product.id}`} className="block">
-        <div className="aspect-square relative">
-          <img
-            src={product.imageUrl}
-            alt={product.name}
-            className="w-full h-full object-cover"
-          />
-        {/* Discount Badge */}
+      <div className="aspect-square relative">
+        <img
+          src={product.imageUrl}
+          alt={product.name}
+          className="w-full h-full object-cover"
+        />
+          {/* Discount Badge */}
         <div className="absolute top-2 right-2">
           <span className="bg-red-500 text-white text-xs px-2 py-1 rounded-sm font-medium">
-            {discount}% OFF
+              {discount}% OFF
           </span>
         </div>
-        {/* More Images Indicator */}
-        <div className="absolute top-2 left-2">
-          <span className="bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded-sm font-medium">
-            +{Math.floor(Math.random() * 4) + 1} More
-          </span>
-        </div>
-        {/* Timer Badge (for some products) */}
-        {Math.random() > 0.7 && (
-          <div className="absolute bottom-2 left-2">
-            <span className="bg-orange-500 text-white text-xs px-2 py-1 rounded-sm font-medium flex items-center">
-              <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              00h: 15m: 23s
+          {/* More Images Indicator */}
+          <div className="absolute top-2 left-2">
+            <span className="bg-black bg-opacity-50 text-white text-xs px-2 py-1 rounded-sm font-medium">
+              +{Math.floor(Math.random() * 4) + 1} More
             </span>
           </div>
-        )}
-        </div>
-      </Link>
+          {/* Timer Badge (for some products) */}
+          {Math.random() > 0.7 && (
+            <div className="absolute bottom-2 left-2">
+              <span className="bg-orange-500 text-white text-xs px-2 py-1 rounded-sm font-medium flex items-center">
+                <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                00h: 15m: 23s
+              </span>
+            </div>
+          )}
+      </div>
       <div className="p-3">
         <h3 className="font-medium text-gray-900 text-sm mb-2 line-clamp-2 leading-tight" style={{fontSize: '13px'}}>
           {product.name}
@@ -264,36 +264,37 @@ const StandardProductCard = ({ product, onAddToCart }) => {
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center space-x-2">
             <span className="text-lg font-bold text-meesho-pink" style={{fontSize: '16px'}}>₹{product.price}</span>
-            <span className="text-sm text-gray-500 line-through" style={{fontSize: '12px'}}>₹{originalPrice}</span>
+              <span className="text-sm text-gray-500 line-through" style={{fontSize: '12px'}}>₹{originalPrice}</span>
           </div>
-        </div>
-        {/* Delivery Badge */}
-        <div className="mb-2">
-          <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-medium">
-            Free Delivery
-          </span>
-        </div>
-        {/* Rating and Reviews */}
-        <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-medium flex items-center">
-              <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
-                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-              </svg>
-              {product.rating}
+          </div>
+          {/* Delivery Badge */}
+          <div className="mb-2">
+            <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-medium">
+              Free Delivery
             </span>
           </div>
-          <div className="text-xs text-gray-500" style={{fontSize: '11px'}}>
-            {product.reviews} Reviews
+          {/* Rating and Reviews */}
+          <div className="flex items-center justify-between">
+            <div className="flex items-center">
+              <span className="bg-green-100 text-green-800 text-xs px-2 py-1 rounded-full font-medium flex items-center">
+                <svg className="w-3 h-3 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+                {product.rating}
+              </span>
+        </div>
+        <div className="text-xs text-gray-500" style={{fontSize: '11px'}}>
+              {product.reviews} Reviews
+        </div>
+          </div>
+          {/* Trust Badge */}
+          <div className="mt-2">
+            <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full font-medium">
+              m Trusted
+            </span>
           </div>
         </div>
-        {/* Trust Badge */}
-        <div className="mt-2">
-          <span className="bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded-full font-medium">
-            m Trusted
-          </span>
-        </div>
-      </div>
+      </Link>
       {/* Add to Cart Button */}
       <div className="mt-3 p-3">
         <button
@@ -304,7 +305,9 @@ const StandardProductCard = ({ product, onAddToCart }) => {
           }}
           className="w-full bg-meesho-pink text-white py-2 px-4 rounded-sm text-sm font-medium hover:bg-pink-600 transition-colors flex items-center justify-center space-x-2"
         >
-          <IoCartOutline />
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 01-2 2H9a2 2 0 01-2-2v-6m8 0V9a2 2 0 00-2-2H9a2 2 0 00-2 2v4.01" />
+          </svg>
           <span>Add to Cart</span>
         </button>
       </div>
@@ -412,7 +415,7 @@ const MeeshoExpress = () => {
   useEffect(() => {
     const fetchAvailableCities = async () => {
       try {
-        const response = await axios.get('/api/products/express-cities');
+        const response = await axios.get(`${API_BASE_URL}/api/products/express-cities`);
         setAvailableCities(response.data);
         // Set default city to first available city
         if (response.data.length > 0) {
@@ -436,7 +439,7 @@ const MeeshoExpress = () => {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`/api/products/express?city=${city}`);
+      const response = await axios.get(`${API_BASE_URL}/api/products/express?city=${city}`);
       setExpressProducts(response.data);
       setFilteredExpressProducts(response.data);
     } catch (err) {
@@ -750,7 +753,7 @@ const Home = ({ searchQuery: propSearchQuery, selectedCategory: propSelectedCate
   useEffect(() => {
     const fetchStandardProducts = async () => {
       try {
-        const response = await axios.get('/api/products/standard');
+        const response = await axios.get(`${API_BASE_URL}/api/products/standard`);
         setStandardProducts(response.data);
         setFilteredProducts(response.data);
       } catch (err) {
@@ -824,15 +827,15 @@ const Home = ({ searchQuery: propSearchQuery, selectedCategory: propSelectedCate
                 <p className="text-lg opacity-90">Get your favorite products delivered in minutes!</p>
               </div>
             </div>
-            <Link
-              to="/express"
+          <Link
+            to="/express"
               className="bg-white text-meesho-pink-light px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors flex items-center space-x-2"
             >
               <span>Try Express</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </Link>
+          </Link>
           </div>
         </div>
       </div>
@@ -860,67 +863,67 @@ const Home = ({ searchQuery: propSearchQuery, selectedCategory: propSelectedCate
                 <option value="Newest First">Newest First</option>
                 <option value="Popularity">Popularity</option>
               </select>
-            </div>
           </div>
         </div>
+      </div>
 
         {/* Products Grid */}
         <div className="w-full">
-            {loading ? (
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-                {[...Array(12)].map((_, i) => (
-                  <div key={i} className="bg-white border border-gray-200 rounded-sm overflow-hidden animate-pulse">
-                    <div className="aspect-square bg-gray-200"></div>
-                    <div className="p-3">
-                      <div className="h-3 bg-gray-200 rounded mb-2"></div>
-                      <div className="h-4 bg-gray-200 rounded"></div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            ) : filteredProducts.length === 0 ? (
-              <div className="text-center py-12">
-                <div className="text-6xl mb-4">🛍️</div>
-                <h3 className="text-xl font-semibold text-gray-700 mb-2">
-                  No products found
-                </h3>
-                <p className="text-gray-500 mb-4">
-                  {searchQuery 
-                    ? `No products found for "${searchQuery}"`
-                    : `No products available in the ${selectedCategory} category.`
-                  }
-                </p>
-                <div className="flex gap-3 justify-center">
-                  {searchQuery && (
-                    <button
-                      onClick={() => {
-                        setSearchQuery('');
-                        handleSearch('');
-                      }}
-                      className="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition-colors"
-                    >
-                      Clear Search
-                    </button>
-                  )}
-                  <button
-                    onClick={() => handleCategoryFilter('All Products')}
-                    className="bg-meesho-pink text-white px-6 py-2 rounded hover:bg-pink-600 transition-colors"
-                  >
-                    View All Products
-                  </button>
+        {loading ? (
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+            {[...Array(12)].map((_, i) => (
+              <div key={i} className="bg-white border border-gray-200 rounded-sm overflow-hidden animate-pulse">
+                <div className="aspect-square bg-gray-200"></div>
+                <div className="p-3">
+                  <div className="h-3 bg-gray-200 rounded mb-2"></div>
+                  <div className="h-4 bg-gray-200 rounded"></div>
                 </div>
               </div>
-            ) : (
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
-                {filteredProducts.map((product) => (
+            ))}
+          </div>
+        ) : filteredProducts.length === 0 ? (
+          <div className="text-center py-12">
+            <div className="text-6xl mb-4">🛍️</div>
+            <h3 className="text-xl font-semibold text-gray-700 mb-2">
+              No products found
+            </h3>
+            <p className="text-gray-500 mb-4">
+              {searchQuery 
+                ? `No products found for "${searchQuery}"`
+                : `No products available in the ${selectedCategory} category.`
+              }
+            </p>
+            <div className="flex gap-3 justify-center">
+              {searchQuery && (
+                <button
+                  onClick={() => {
+                    setSearchQuery('');
+                    handleSearch('');
+                  }}
+                  className="bg-gray-500 text-white px-6 py-2 rounded hover:bg-gray-600 transition-colors"
+                >
+                  Clear Search
+                </button>
+              )}
+              <button
+                onClick={() => handleCategoryFilter('All Products')}
+                className="bg-meesho-pink text-white px-6 py-2 rounded hover:bg-pink-600 transition-colors"
+              >
+                View All Products
+              </button>
+            </div>
+          </div>
+        ) : (
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-3">
+            {filteredProducts.map((product) => (
                   <StandardProductCard 
                     key={product.id} 
                     product={product} 
                     onAddToCart={onAddToCart}
                   />
-                ))}
-              </div>
-            )}
+            ))}
+          </div>
+        )}
         </div>
       </div>
     </div>
@@ -1025,7 +1028,7 @@ const ProductDetail = ({ onAddToCart }) => {
     const fetchProduct = async () => {
       try {
         setLoading(true);
-        const response = await axios.get(`/api/products/${productId}`);
+        const response = await axios.get(`${API_BASE_URL}/api/products/${productId}`);
         setProduct(response.data);
       } catch (err) {
         setError('Product not found');
